@@ -5,7 +5,7 @@
       "img": "https://images.unsplash.com/photo-1592895792095-85fa785192a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       "title": "Journaling and Mindfulness",
       "writer": "Joshua Ginter",
-      "userId": 1,
+      "writerId": 1,
       "date": "2017-11-8",
       "likes": 0,
       "content": "In its thinnest form, mindfulness can be described as being aware of something. The sky is blue: I’m mindful of the color of the sky. The air is cool: I’m mindful of the changing seasons.",
@@ -16,7 +16,7 @@
       "img": "https://images.unsplash.com/photo-1499728603263-13726abce5fd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       "title": "The Speed of Innovation",
       "writer": "Bhavini Soneji",
-      "userId": 2,
+      "writerId": 2,
       "date": "2020-11-25",
       "likes": 0,
       "content": "Here are various factors that should be considered in determining how to address these — e.g. size of the company, phase of the company (growth phase or trying to find product market fit, etc.), maturity of the technology team, and tooling. There is no right or wrong answer, but ultimately, the largest determinant of success is ”speed of innovation.",
@@ -27,7 +27,7 @@
       "img": "https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       "title": "Rewriting in the time of COVID-19",
       "writer": "Monica Grandy",
-      "userId": 3,
+      "writerId": 3,
       "date": "2020-10-15",
       "likes": 0,
       "content": "In what feels like a thousand years ago (although, in fact, it was October 2019), Headspace made a commitment to expand its offering beyond meditation. The preliminary prototype was sleek, inviting, feature-rich, and very, very different from what Headspace looked like at the time — especially in terms of technology. As a matter of fact, we were basically looking at a completely different application! The prospect of building out this new interface and feature set in less than a year was daunting to all of the engineering teams but for us droids, it seemed like a near impossible task. Why? Because our existing codebase was, to put it bluntly, a hot mess.",
@@ -61,54 +61,30 @@
       "postId": 3
     }
   ],
-  "users": [
+  "writers": [
     {
       "id": 1,
-      "name": "Leanne Graham",
-      "username": "Bret",
-      "email": "Sincere@april.biz",
-      "phone": "1-770-736-8031 x56442",
-      "website": "hildegard.org"
+      "img": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "name": "Joshua Ginter",
+      "twitter": "jginter",
+      "linkedin": "joshuaginter",
+      "email": "jginter@gmail.com"
     },
     {
       "id": 2,
-      "name": "Ervin Howell",
-      "username": "Antonette",
-      "email": "Shanna@melissa.tv",
-      "phone": "010-692-6593 x09125",
-      "website": "anastasia.net"
+      "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "name": "Bhavini Soneji",
+      "twitter": "bhavini.soneji",
+      "linkedin": "bhavinisoneji",
+      "email": "bhavinisoneji@gmail.com"
     },
     {
       "id": 3,
-      "name": "Clementine Bauch",
-      "username": "Samantha",
-      "email": "Nathan@yesenia.net",
-      "phone": "1-463-123-4447",
-      "website": "ramiro.info"
-    },
-    {
-      "id": 4,
-      "name": "Patricia Lebsack",
-      "username": "Karianne",
-      "email": "Julianne.OConner@kory.org",
-      "phone": "493-170-9623 x156",
-      "website": "kale.biz"
-    },
-    {
-      "id": 5,
-      "name": "Chelsey Dietrich",
-      "username": "Kamren",
-      "email": "Lucio_Hettinger@annie.ca",
-      "phone": "(254)954-1289",
-      "website": "demarco.info"
-    },
-    {
-      "id": 6,
-      "name": "Mrs. Dennis Schulist",
-      "username": "Leopoldo_Corkery",
-      "email": "Karley_Dach@jasper.info",
-      "phone": "1-477-935-8478 x6430",
-      "website": "ola.org"
+      "img": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "name": "Monica Grandy",
+      "twitter": "mongrandy",
+      "linkedin": "monicagrandy",
+      "email": "monicagrandy@gmail.com"
     }
   ]
 }
