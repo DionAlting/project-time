@@ -1,8 +1,8 @@
-import AuthorPage from "./pages/AuthorPage";
+import AuthorPage from "./pages/AuthorPage/AuthorPage";
 import { Switch, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
-import ArticlePage from "./pages/ArticlePage";
-import Navbar from "./components/NavBar";
+import ArticlePage from "./pages/ArticlePage/ArticlePage";
+import Navbar from "./components/NavBar/NavBar";
 
 function App() {
   return (
