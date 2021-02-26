@@ -2,7 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import AuthorPage from "./pages/AuthorPage/AuthorPage";
 import ArticlePage from "./pages/ArticlePage/ArticlePage";
-import Navbar from "./components/Navbar/NavBar";
+import Navbar from "./components/NavBar/NavBar";
 
 function App() {
   return (
