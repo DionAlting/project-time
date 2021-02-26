@@ -28,7 +28,7 @@ export default function AuthorPage() {
   console.log(authorInfo);
 
   return (
-    <div className="author">
+    <div className="container mt-4">
       <h3>{authorInfo.name}</h3>
       <div className="authorDetails">
         <img src={authorInfo.img} alt={authorInfo.name}></img>
