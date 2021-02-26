@@ -33,17 +33,29 @@ export default function HomePage() {
   }
 
   return (
-    <div>
-      <p>Check out the article feeds!</p>
-      <div>
-        Sort by:{" "}
-        <select onChange={change_sorting} value={sort_by}>
-          <option value="sort_by">Number of Likes</option>
-        </select>
+    <div className="container">
+      <div className="col">
+        <p>Check out the article feeds!</p>
+        <div>
+          Sort by:{" "}
+          <select onChange={change_sorting} value={sort_by}>
+            <option value="sort_by">Number of Likes</option>
+          </select>
+        </div>
+
+        {articles_sorted.map((article) => {
+          return (
+            <div class="row w-100">
+              <div
+                className="wh-100 d-flex align-items-strech "
+                key={article.id}
+              >
+                <ArticleCard Article={article} />
+              </div>
+            </div>
+          );
+        })}
       </div>
-      {articles_sorted.map((article) => {
-        return <ArticleCard Article={article} />;
-      })}
     </div>
   );
 }

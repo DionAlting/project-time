@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AddComments from "../../components/AddComment/AddComments";
 import "./ArticlePage.scss";
-import LikeButton from "../../components/LikeButton/LikeButton";
 
 const ArticlePage = () => {
   const route_parameter = useParams();
@@ -56,7 +55,7 @@ const ArticlePage = () => {
   };
 
   return (
-    <div>
+    <div className="container mt-4">
       <div className="d-flex justify-content-center">
         {articlesData.length ? (
           articlesData.map((article) => {

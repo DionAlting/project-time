@@ -6,7 +6,7 @@ import Navbar from "./components/NavBar/NavBar";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar className="App"></Navbar>
       <Switch>
         <Route path="/article/:article_id" component={ArticlePage} />
