@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AddComments from "../../components/AddComment/AddComments";
 import "./ArticlePage.scss";
+import LikeButton from "../../components/LikeButton/LikeButton";
 
 const ArticlePage = () => {
   const route_parameter = useParams();
@@ -39,6 +40,21 @@ const ArticlePage = () => {
     console.log(addedComment);
   };
 
+  const addingLikes = () => {
+    const addedLikes = articlesData.map((article) => {
+      if (article.id === articleId) {
+        return {
+          ...article,
+          likes: article.likes + 1,
+        };
+      } else {
+        return article;
+      }
+    });
+    setArticlesData(addedLikes);
+    console.log(addedLikes);
+  };
+
   return (
     <div>
       <div className="d-flex justify-content-center">
@@ -54,12 +70,15 @@ const ArticlePage = () => {
                     style={{ width: 600 }}
                   />
                   <h4>{article.writer}</h4>
+                  <h6>Likes: {article.likes}</h6>
                   <p>{article.content}</p>
                   <p style={{ marginTop: 50 }}>Comments:</p>
                   {article.comments.map((comment, index) => {
                     return <li key={index}>{comment}</li>;
                   })}
                   <p style={{ marginTop: 50 }}>Add your comments here:</p>
+
+                  <button onClick={addingLikes}>Like</button>
                   <AddComments addingComment={addingComment} />
                 </div>
               );
