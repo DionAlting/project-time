@@ -78,7 +78,9 @@ const ArticlePage = () => {
                   })}
                   <p style={{ marginTop: 50 }}>Add your comments here:</p>
 
-                  <button onClick={addingLikes}>Like</button>
+                  <button onClick={addingLikes} className="btn btn-primary">
+                    Like
+                  </button>
                   <AddComments addingComment={addingComment} />
                 </div>
               );

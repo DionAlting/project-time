@@ -20,7 +20,9 @@ export default function AddComments(props) {
           onChange={(e) => setComment(e.target.value)}
         />
         <div>
-          <button type="submit">Submit</button>
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
         </div>
       </form>
     </div>
