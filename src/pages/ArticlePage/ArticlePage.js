@@ -23,6 +23,22 @@ const ArticlePage = () => {
 
   console.log(articlesData);
 
+  const addingComment = (comment) => {
+    // console.log(comment);
+    const addedComment = articlesData.map((article) => {
+      if (article.id === articleId) {
+        return {
+          ...article,
+          comments: [...article.comments, comment],
+        };
+      } else {
+        return article;
+      }
+    });
+    setArticlesData(addedComment);
+    console.log(addedComment);
+  };
+
   return (
     <div>
       <div className="d-flex justify-content-center">
@@ -40,9 +56,11 @@ const ArticlePage = () => {
                   <h4>{article.writer}</h4>
                   <p>{article.content}</p>
                   <p style={{ marginTop: 50 }}>Comments:</p>
-                  {article.comments.map((comment) => {
-                    return <li>{comment}</li>;
+                  {article.comments.map((comment, index) => {
+                    return <li key={index}>{comment}</li>;
                   })}
+                  <p style={{ marginTop: 50 }}>Add your comments here:</p>
+                  <AddComments addingComment={addingComment} />
                 </div>
               );
             }
@@ -51,8 +69,6 @@ const ArticlePage = () => {
           <p>Loading...</p>
         )}
       </div>
-      <p style={{ marginTop: 50 }}>Add your comments here:</p>
-      <AddComments />
     </div>
   );
 };

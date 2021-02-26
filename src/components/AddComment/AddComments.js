@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 
-export default function AddComments() {
+export default function AddComments(props) {
   const [comment, setComment] = useState("");
-  console.log(comment);
+
+  const onSubmitComment = (e) => {
+    e.preventDefault();
+    props.addingComment(comment);
+    setComment("");
+  };
 
   return (
     <div>
-      <form onSubmit>
-        <input
+      <form onSubmit={onSubmitComment}>
+        <textarea
           type="text"
+          rows="4"
+          cols="50"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
-          style={{ height: 100, width: 600, fontSize: 14 }}
         />
         <div>
           <button type="submit">Submit</button>
