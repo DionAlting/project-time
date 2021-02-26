@@ -84,6 +84,7 @@ const ArticlePage = () => {
                 </div>
               );
             }
+            return article;
           })
         ) : (
           <p>Loading...</p>
