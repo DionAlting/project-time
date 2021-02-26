@@ -59,7 +59,7 @@ const ArticlePage = () => {
       <div className="d-flex justify-content-center">
         {articlesData.length ? (
           articlesData.map((article) => {
-            if (article.id === articleId) {
+            if (articleId === article.id) {
               return (
                 <div key={article.id}>
                   <h2>{article.title}</h2>
@@ -83,8 +83,9 @@ const ArticlePage = () => {
                   <AddComments addingComment={addingComment} />
                 </div>
               );
+            } else {
+              return null;
             }
-            return article;
           })
         ) : (
           <p>Loading...</p>
